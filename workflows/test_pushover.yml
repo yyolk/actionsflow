@@ -1,9 +1,11 @@
 on:
   script:
+    # run: |
+    #   const result = {"id": Math.random().toString(36).substring(7), "d": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"}
+    #   return [result]
+    # deduplicationKey: id
     run: |
-      const result = {"id": Math.random().toString(36).substring(7), "d": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"}
-      return [result]
-    deduplicationKey: id
+      return [{}]
     config:
       manualRunEvent: workflow_dispatch
       force: true
