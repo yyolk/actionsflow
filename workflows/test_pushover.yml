@@ -1,9 +1,10 @@
 on:
-  script:
-    run: |
-      const result = await helpers.axios.get("https://jsonplaceholder.typicode.com/posts")
-      return result.data
-    deduplicationKey: id
+  workflow_dispatch:
+  # script:
+  #   run: |
+  #     const result = await helpers.axios.get("https://jsonplaceholder.typicode.com/posts")
+  #     return result.data
+  #   deduplicationKey: id
 jobs:
   echo:
     name: echo
