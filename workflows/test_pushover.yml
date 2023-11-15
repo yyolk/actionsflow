@@ -15,7 +15,7 @@ jobs:
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
         run: >-
           curl -s
-            --form-string "token=$PUSHOVER_API_TOKEN"
-            --form-string "user=$PUSHOVER_USER_KEY"
-            --form-string "message=hello world, from actionsflow"
-            https://api.pushover.net/1/messages.json
+          --form-string "token=$PUSHOVER_API_TOKEN"
+          --form-string "user=$PUSHOVER_USER_KEY"
+          --form-string "message=hello world, from actionsflow"
+          https://api.pushover.net/1/messages.json
