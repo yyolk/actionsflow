@@ -4,16 +4,16 @@ on:
       return true
 jobs:
   echo:
-    name: echo to pushover
+    name: echo
     runs-on: ubuntu-latest
     steps:
       - name: Echo
         env:
           PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
-        run: |
-          curl -s \
-            --form-string "token=$PUSHOVER_API_TOKEN" \
-            --form-string "user=$PUSHOVER_USER_KEY" \
-            --form-string "message=hello world, from actionsflow, woot *bang*" \
+        run: >-
+          curl -s
+            --form-string "token=$PUSHOVER_API_TOKEN"
+            --form-string "user=$PUSHOVER_USER_KEY"
+            --form-string "message=hello world, from actionsflow"
             https://api.pushover.net/1/messages.json
