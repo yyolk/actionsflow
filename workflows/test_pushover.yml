@@ -1,8 +1,9 @@
 on:
   script:
     run: |
-      const results = {"a": 1}
-      return results
+      const result = await helpers.axios.get("https://jsonplaceholder.typicode.com/posts")
+      return result.data
+    deduplicationKey: id
 jobs:
   echo:
     name: echo
