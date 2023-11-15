@@ -1,4 +1,7 @@
-on: workflow_dispatch
+on:
+  script:
+    run: |
+      return true
 jobs:
   echo:
     name: echo to pushover
