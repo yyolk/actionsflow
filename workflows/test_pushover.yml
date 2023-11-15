@@ -1,10 +1,11 @@
 on:
-  workflow_dispatch:
-  # script:
-  #   run: |
-  #     const result = await helpers.axios.get("https://jsonplaceholder.typicode.com/posts")
-  #     return result.data
-  #   deduplicationKey: id
+  script:
+    run: |
+      const result = {"id": Math.random().toString(36).substring(7)}
+      return result
+    deduplicationKey: id
+    config:
+      manualRunEvent: workflow_dispatch
 jobs:
   echo:
     name: echo
