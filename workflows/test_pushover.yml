@@ -21,6 +21,22 @@ jobs:
       #   with:
       #     packages: jo
       #     version: 1.0
+      - name: Axios Action POST
+        uses: actionsflow/axios@v1
+        with:
+          url: https://api.pushover.net/1/messages.json
+          method: POST
+          data: >-
+            {
+            "token": "${{ secrets. PUSHOVER_API_TOKEN }}",
+            "user": "${{ secrets.PUSHOVER_USER_KEY }}",
+            "title": "axios test placeholder title",
+            "message": "a <b>fake</b> message",
+            "html": 1,
+            "url": "https://example.com",
+            "url_title": "Read more...",
+            "sound": "climb"
+            }
       - name: update curl version
         run: |
           sudo add-apt-repository ppa:savoury1/backports -y
