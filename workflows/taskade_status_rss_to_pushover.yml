@@ -1,7 +1,7 @@
 on:
   rss:
     url: https://status.taskade.com/history.rss
-    force: true
+    # force: true
 jobs:
   # rough copy, feasability check
   print_and_pushover_notify:
@@ -43,7 +43,7 @@ jobs:
           jo -p
           token="$PUSHOVER_API_TOKEN"
           user="$PUSHOVER_USER_KEY"
-          title="$title"
+          title="Taskade Status: $title"
           message="$content"
           html="1"
           url="$link"
