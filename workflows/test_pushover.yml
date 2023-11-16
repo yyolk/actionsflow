@@ -21,13 +21,13 @@ jobs:
       #   with:
       #     packages: jo
       #     version: 1.0
-      - name: Echo Curl Version
-        run: curl -V
       - name: update curl version
         run: |
           sudo add-apt-repository ppa:savoury1/curl34 -y
           sudo apt-get update
-          sudo apt-get install --only-upgrade curl
+          sudo apt-get upgrade
+      - name: Echo Curl Version
+        run: curl -V    
       - name: Install jo
         env:
           JO_VERSION: "1.9"
