@@ -61,6 +61,8 @@ jobs:
           html="1"
           url="$link"
           url_title="Read more..."
+          priority="1"
+          sound="climb"
           | 
           curl -s
           -X POST
