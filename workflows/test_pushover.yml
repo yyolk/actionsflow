@@ -21,6 +21,12 @@ jobs:
       #   with:
       #     packages: jo
       #     version: 1.0
+      - name: Echo Curl Version
+        run: curl -V
+      - name: update curl version
+        run: |
+          sudo apt-get update
+          sudo apt-get install --only-upgrade curl
       - name: Install jo
         env:
           JO_VERSION: "1.9"
