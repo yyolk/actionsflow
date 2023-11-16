@@ -23,9 +23,9 @@ jobs:
       #     version: 1.0
       - name: update curl version
         run: |
-          sudo add-apt-repository ppa:savoury1/curl34 -y
+          sudo add-apt-repository ppa:savoury1/backports -y
           sudo apt-get update
-          sudo apt-get upgrade
+          sudo apt-get install --only-upgrade -y curl
       - name: Echo Curl Version
         run: curl -V    
       - name: Install jo
