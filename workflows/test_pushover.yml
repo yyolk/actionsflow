@@ -11,7 +11,7 @@ on:
       force: true
       shouldDeduplicate: false
       # turned off = false
-      active: true
+      active: false
 jobs:
   echo:
     name: echo
