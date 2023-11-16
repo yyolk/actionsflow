@@ -10,17 +10,28 @@ on:
       manualRunEvent: workflow_dispatch
       force: true
       shouldDeduplicate: false
-      # turned off
+      # turned off = false
       active: true
 jobs:
   echo:
     name: echo
     runs-on: ubuntu-latest
     steps:
-      - uses: awalsh128/cache-apt-pkgs-action@latest
-        with:
-          packages: jo
-          version: 1.0
+      # - uses: awalsh128/cache-apt-pkgs-action@latest
+      #   with:
+      #     packages: jo
+      #     version: 1.0
+      - name: Install jo
+        env:
+          JO_VERSION: "1.9"
+        run: |
+        curl -L https://github.com/jpmens/jo/releases/download/$JO_VERSION/jo-$JO_VERSION.tar.gz | tar xv
+        cd jo-$JO_VERSION
+        autoreconf -i
+        ./configure
+        make check
+        make install
+        jo -v
       - name: Echo
         env:
           PUSHOVER_API_TOKEN: ${{ secrets.PUSHOVER_API_TOKEN }}
