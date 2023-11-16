@@ -25,7 +25,7 @@ jobs:
         env:
           JO_VERSION: "1.9"
         run: |
-          curl -L https://github.com/jpmens/jo/releases/download/$JO_VERSION/jo-$JO_VERSION.tar.gz | tar xv
+          curl -L https://github.com/jpmens/jo/releases/download/$JO_VERSION/jo-$JO_VERSION.tar.gz | tar xvz
           cd jo-$JO_VERSION
           autoreconf -i
           ./configure
