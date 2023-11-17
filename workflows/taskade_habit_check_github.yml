@@ -29,4 +29,4 @@ jobs:
           url: https://www.taskade.com/api/v1/projects/${{ secrets.TASKADE_PROJECTID_REOCCURRING }}/tasks/${{ secrets.TASKADE_TASKID_REOCCURRING_PUSH_SOMETHING_TO_GITHUB }}/complete
           method: POST
           bearer-token: ${{ secrets.TASKADE_PAT }}
-          data: {}
+          data: '{}'
