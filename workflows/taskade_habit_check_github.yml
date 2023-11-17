@@ -10,10 +10,10 @@ on:
 
 jobs:
   print:
-  name: Print
-  runs-on: ubuntu-latest
-  steps:
-    - name: Print Outputs
-      env:
-        sample: ${{ on.poll.outputs.payload.commits[0].url }}
-      run: echo "$sample"
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          sample: ${{ on.poll.outputs.payload.commits[0].url }}
+        run: echo "$sample"
