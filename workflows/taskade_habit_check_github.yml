@@ -19,3 +19,14 @@ jobs:
         env:
           sample: ${{ on.poll.outputs.payload.commits[0].url }}
         run: echo "$sample"
+  complete_taskade_task:
+    name: Complete Taskade Task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Complete Taskade Task
+        uses: actionsflow/axios@v1
+        with:
+          url: https://www.taskade.com/api/v1/projects/${{ secrets.TASKADE_PROJECTID_REOCCURRING }}/tasks/${{ secrets.TASKADE_TASKID_REOCCURRING_PUSH_SOMETHING_TO_GITHUB }}/complete
+          method: POST
+          bearer-token: ${{ secrets.TASKADE_PAT }}
+          data:
