@@ -4,6 +4,7 @@ on:
     config:
       every: '0 3 * * *'  # 9pm CST, 3AM UTC
       manualRunEvent: workflow_dispatch
+      limit: 1
       filterScript: |
         if (item.type === "PushEvent" && (new Date() - new Date(item.created_at)) / (1000 * 60 * 60 * 24) < 1) {
           return true
