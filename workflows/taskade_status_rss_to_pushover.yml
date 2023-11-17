@@ -13,6 +13,7 @@ jobs:
         env:
           title: ${{on.rss.outputs.title}}
           contentSnippet: ${{on.rss.outputs.contentSnippet}}
+          content: ${{on.rss.outputs.content}}
           link: ${{on.rss.outputs.link}}
         run: |
           echo title: $title
