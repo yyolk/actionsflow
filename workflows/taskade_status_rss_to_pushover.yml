@@ -30,7 +30,7 @@ jobs:
             "token": "${{ secrets.PUSHOVER_API_TOKEN }}",
             "user": "${{ secrets.PUSHOVER_USER_KEY }}",
             "title": "Taskade Status: ${{on.rss.outputs.title}}",
-            "message": "${{on.rss.outputs.content}}",
+            "message": "<<<${{on.rss.outputs.content}}>>>",
             "html": 1,
             "url": "${{on.rss.outputs.link}}",
             "url_title": "Read more...",
