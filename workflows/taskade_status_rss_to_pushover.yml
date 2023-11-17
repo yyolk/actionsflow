@@ -1,9 +1,7 @@
 on:
   rss:
     url: https://status.taskade.com/history.rss
-    config:
-      force: true
-      manualRunEvent: workflow_dispatch
+
 jobs:
   print_and_pushover_notify:
     name: Print and Pushover Notify
