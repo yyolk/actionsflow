@@ -1,6 +1,7 @@
 on:
   poll:
-    url: https://api.github.com/users/yyolk/events
+    # url: https://api.github.com/users/yyolk/events
+    url: https://gist.githubusercontent.com/yyolk/8a33c278eb1aeb8c1a441b20c240c1ac/raw/44b23a9d4e2a207111f3141bdd21b6a9ceb42877/events.json
     config:
       every: '0 3 * * *'  # 9pm CST, 3AM UTC
       manualRunEvent: workflow_dispatch
