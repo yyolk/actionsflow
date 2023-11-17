@@ -28,7 +28,7 @@ jobs:
           method: POST
           data: >-
             {
-            "token": "${{ secrets. PUSHOVER_API_TOKEN }}",
+            "token": "${{ secrets.PUSHOVER_API_TOKEN }}",
             "user": "${{ secrets.PUSHOVER_USER_KEY }}",
             "title": "axios test placeholder title",
             "message": "a <b>fake</b> message",
