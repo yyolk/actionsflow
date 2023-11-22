@@ -2,9 +2,42 @@
 This is a workflow repository powered by [Actionsflow](https://github.com/actionsflow/actionsflow), generated from [actionsflow/actionsflow-workflow-default](https://github.com/actionsflow/actionsflow-workflow-default)
 
 <center>
-
-   [![actionsflow](https://github.com/yyolk/actionsflow/assets/134478/9101f696-0f6e-4513-9295-403d8947c8a2)](https://github.com/actionsflow/actionsflow)
-
+  <svg
+    height="500"
+    width="500"
+    viewBox="0 0 2048 2048"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <a
+      href="https://github.com/actionsflow/actionsflow"
+    >
+        <ellipse
+          cx="560.751"
+          cy="914.63"
+          fill="#fff"
+          rx="151.534"
+          ry="252.599"
+        />
+        <ellipse
+          cx="915.415"
+          cy="917.289"
+          fill="#fff"
+          rx="151.534"
+          ry="252.599"
+        />
+        <path
+          d="m-735.015 18.242c0 406.604 328.411 735.015 735.015 735.015 403.477 0 731.888-328.411 735.016-731.888-3.128 100.088-84.449 178.281-184.536 178.281s-184.536-81.321-184.536-184.536v-217.891c0-303.39-247.09-550.48-550.48-550.48-303.389 0-550.479 247.09-550.479 550.48zm274.98-321.243c64.477 0 117.411 52.536 117.013 117.013v163.977c0 64.476-52.934 117.011-117.013 117.011-64.078 0-117.013-52.138-117.013-117.012v-163.977c0-64.477 52.537-117.013 117.013-117.013zm343.02 0c64.476 0 117.41 52.536 117.013 117.013v163.977c0 64.476-52.935 117.011-117.013 117.011s-117.013-52.137-117.013-117.01v-163.977c0-64.477 52.537-117.013 117.013-117.013z"
+          transform="translate(1024 1024)"
+        />
+        <ellipse
+          cx="950.169"
+          cy="838.197"
+          fill="#d8d8d8"
+          rx=".661"
+          ry="5.465"
+        />
+    </a>
+  </svg>
 </center>
 
 
@@ -127,4 +160,4 @@ Full documentation for Actionsflow lives [on the website](https://actionsflow.gi
 
 * * *
 
-[👻 via](https://github.com/actionsflow/actionsflow/blob/06edc408e8c2d1b0f8de296c2fda759b7027c4e3/docs/assets/logo.png)
+[👻 via](https://github.com/actionsflow/actionsflow/blob/06edc408e8c2d1b0f8de296c2fda759b7027c4e3/docs/assets/logo.svg)
