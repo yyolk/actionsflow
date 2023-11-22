@@ -1,7 +1,8 @@
 
 This is a workflow repository powered by [Actionsflow](https://github.com/actionsflow/actionsflow), generated from [actionsflow/actionsflow-workflow-default](https://github.com/actionsflow/actionsflow-workflow-default)
 
-<center>
+
+<p align="center">
   <a href="https://github.com/actionsflow/actionsflow">
     <img
       width="500"
@@ -9,7 +10,7 @@ This is a workflow repository powered by [Actionsflow](https://github.com/action
       src="https://github.com/yyolk/actionsflow/assets/134478/bd8b5f47-cade-4b7b-9d4a-9a3bfeb76637"
     >
   </a>
-</center>
+</p>
 
 
 # 🏁 Getting Started <a name = "getting_started"></a>
