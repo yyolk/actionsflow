@@ -1,8 +1,8 @@
 on:
   pocket:
-    # authToken: ${{ secrets.POCKET_AUTH_TOKEN }}
+    # accessToken: ${{ secrets.POCKET_ACCESS_TOKEN }}
     # consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
-    authToken: abc
+    accessToken: abc
     consumerKey: abc
     config:
       force: true
