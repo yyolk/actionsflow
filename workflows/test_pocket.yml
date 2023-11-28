@@ -1,0 +1,22 @@
+on:
+  pocket:
+    authToken: ${{ secrets.POCKET_AUTH_TOKEN }}
+    consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
+    config:
+      force: true
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.pocket.outputs.resolved_title}}
+          url: ${{on.pocket.outputs.resolved_url}}
+          excerpt: ${{on.pocket.outputs.excerpt}}
+          tags: ${{on.pocket.outputs.tags}}
+        run: |
+          echo title: $title
+          echo url: $url
+          echo excerpt: $excerpt
+          echo tags: $tags
