@@ -5,6 +5,7 @@
   "version": "1.0.2",
   "author": "Owen Young <theowenyoung@gmail.com>",
   "devDependencies": {
+    "@actionsflow/trigger-pocket": "github:yyolk/actionsflow-trigger-pocket",
     "actionsflow": "^1.12.1"
   },
   "keywords": [
