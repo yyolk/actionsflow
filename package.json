@@ -5,6 +5,7 @@
   "version": "1.0.2",
   "author": "Owen Young <theowenyoung@gmail.com>",
   "devDependencies": {
+    "@actionsflow/trigger-pocket": "https://github.com/yyolk/actionsflow-trigger-pocket/releases/download/1.1.0/actionsflow-trigger-pocket-1.1.0.tgz",
     "actionsflow": "^1.12.1"
   },
   "keywords": [
