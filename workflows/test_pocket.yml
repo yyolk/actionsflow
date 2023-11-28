@@ -1,9 +1,7 @@
 on:
   pocket:
-    # accessToken: ${{ secrets.POCKET_ACCESS_TOKEN }}
-    # consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
-    accessToken: abc
-    consumerKey: abc
+    accessToken: ${{ secrets.POCKET_ACCESS_TOKEN }}
+    consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
     config:
       force: true
 jobs:
