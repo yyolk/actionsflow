@@ -2,8 +2,11 @@ on:
   pocket:
     accessToken: ${{ secrets.POCKET_ACCESS_TOKEN }}
     consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
+    sinceHoursAgo: 25
     config:
       force: true
+      # turned off = false
+      # active: false
 jobs:
   print:
     name: Print
