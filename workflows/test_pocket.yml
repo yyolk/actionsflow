@@ -4,7 +4,8 @@ on:
     consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
     sinceHoursAgo: 25
     config:
-      force: true
+      # force: true
+      every: "0 * * * *"
       # turned off = false
       # active: false
 jobs:
