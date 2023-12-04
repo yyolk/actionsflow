@@ -1,0 +1,26 @@
+on:
+  pocket:
+    accessToken: ${{ secrets.POCKET_ACCESS_TOKEN }}
+    consumerKey: ${{ secrets.POCKET_CONSUMER_KEY }}
+    sinceHoursAgo: 25
+    config:
+      # force: true
+      every: "0 * * * *"
+      # turned off = false
+      # active: false
+jobs:
+  print:
+    name: Print
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Outputs
+        env:
+          title: ${{on.pocket.outputs.given_title}}
+          url: ${{on.pocket.outputs.given_url}}
+          excerpt: ${{on.pocket.outputs.excerpt}}
+          tags: ${{join(on.pocket.outputs.tags, ', ')}}
+        run: |
+          echo title: $title
+          echo url: $url
+          echo excerpt: $excerpt
+          echo tags: $tags
